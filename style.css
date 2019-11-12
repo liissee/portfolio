@@ -4,6 +4,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
+/* HEADER  */
+
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("BBb.jpg");
     height: 500px;
@@ -57,14 +60,35 @@ span {
     /* transform: translate(-30%, -30%); */
     border: 3px solid #fff;
     border-radius: 50%;
-    width: 45%;
+    /* width: 45%; */
+    width: 170px;
 }
 
-.short-presentation {
-    background: #F4F4F4;
-    padding: 30px;
-    line-height: 25px;
+.circles {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    display: flex;
+}
+
+
+/* SECTIONS WITH INFORMATION */
+
+.short-presentation p {
     text-indent: 45pt;
+    text-align: start;
+    padding-top: 0px;
 }
 
 .figure {
@@ -85,4 +109,46 @@ span {
     width: 40px;
     height: 3px;
     background: red;
+}
+
+section {
+    text-align: center;
+    padding: 55px;
+    line-height: 25px;
+}
+
+section:nth-child(even) {
+    background-color: #F4F4F4;
+}
+
+section p {
+    padding-top: 40px;
+}
+
+h4 {
+    font-size: 21px;
+    background: red;
+    color: #fff;
+    display: inline;
+    padding: 3px 13px;
+}
+
+.my-thoughts p {
+    text-align: start;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 55px;
+    line-height: 25px;
+}
+
+footer h4 {
+    padding-bottom: 50px;
+    color: black;
 }
