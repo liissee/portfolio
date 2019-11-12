@@ -49,8 +49,9 @@
     font-size: 1.5em;
 }
 
-span {
+#name-bold {
     font-weight: bold;
+    color: #fff;
 }
 
 #profile-picture {
@@ -133,6 +134,25 @@ h4 {
 
 .my-thoughts p {
     text-align: start;
+}
+
+.skill-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-lists ul {
+    margin-top: 40px;
+    padding-inline-start: 0px;
+    list-style: none;
+    width: 40%;
+    text-align: start;
+}
+
+#list-category {
+    font-weight: bold;
+    color: red;
 }
 
 
