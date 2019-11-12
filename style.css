@@ -42,6 +42,7 @@
 .hero-text h2 {
     font-weight: 700;
     font-size: 3em;
+    letter-spacing: 1.5px;
 }
 
 .hero-text h3 {
@@ -51,20 +52,22 @@
 
 #name-bold {
     font-weight: bold;
-    color: #fff;
 }
 
 #profile-picture {
     position: absolute;
     top: 69%;
     left: 50%;
-    border: 3px solid #fff;
+    border: 1.5px solid #fff;
     border-radius: 50%;
     width: 170px;
 }
 
+
+/* THREE ICONS IN UPPER RIGHT CORNER */
+
 .circles {
-    border: 3px solid white;
+    border: 1.5px solid white;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -147,7 +150,7 @@ h4 {
 
 .skill-lists {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -165,7 +168,7 @@ h4 {
 }
 
 
-/* FOR MORE INFO */
+/* FOR MORE INFO + icons */
 
 .for-more .circles {
     margin-top: 40px;
@@ -189,6 +192,15 @@ h4 {
     padding-top: 0px;
 }
 
+.for-more a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.for-more a:hover {
+    color: red;
+}
+
 
 /* FOOTER */
 
@@ -203,18 +215,94 @@ footer {
 
 /* TABLET */
 
-@media (min-width: 650px) {}
-
-
-/* DESKTOP */
-
-@media (min-width: 900px) {
+@media (min-width: 650px) and (max-width: 999px) {
+    /* HEADER/HERO IMAGE SECTION */
+    h4 {
+        font-size: 1.4em;
+    }
+    .hero-text {
+        top: 50%;
+        left: 46%;
+    }
+    .hero-text h2 {
+        font-size: 3.5em;
+    }
+    .hero-text h3 {
+        font-size: 1.6em;
+    }
+    #profile-picture {
+        top: 64%;
+        left: 60%;
+        width: 190px;
+    }
+    /* THREE ICONS IN UPPER RIGHT CORNER */
+    .circles {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+    .icons {
+        top: 15%;
+        left: 64%;
+    }
     section {
-        padding: 50px 230px;
+        padding: 50px 150px;
     }
     .skill-lists {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 1000px) {
+    /* HEADER/HERO IMAGE SECTION */
+    .hero-text {
+        top: 50%;
+        left: 50%;
+    }
+    .hero-text p {
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+    .hero-text h2 {
+        font-size: 4.3em;
+    }
+    .hero-text h3 {
+        font-size: 1.8em;
+    }
+    #profile-picture {
+        top: 64%;
+        left: 65%;
+        width: 200px;
+    }
+    /* THREE ICONS IN UPPER RIGHT CORNER */
+    .circles {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+    .icons {
+        top: 15%;
+        left: 68%;
+    }
+    section {
+        padding: 50px 350px;
+    }
+    .skill-lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .icons-bottom {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 25px;
+    }
+    h4 {
+        font-size: 1.8em;
     }
 }
