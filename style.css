@@ -84,6 +84,31 @@
 
 /* SECTIONS WITH INFORMATION */
 
+section {
+    text-align: center;
+    padding: 55px;
+    line-height: 25px;
+}
+
+section:nth-child(even) {
+    background-color: #F4F4F4;
+}
+
+section p {
+    padding-top: 40px;
+}
+
+h4 {
+    font-size: 1.2em;
+    background: red;
+    color: #fff;
+    display: inline;
+    padding: 3px 13px;
+}
+
+
+/* INTRO SHORT PRESENTATION */
+
 .short-presentation p {
     text-indent: 45pt;
     text-align: start;
@@ -110,35 +135,19 @@
     background: red;
 }
 
-section {
-    text-align: center;
-    padding: 55px;
-    line-height: 25px;
-}
 
-section:nth-child(even) {
-    background-color: #F4F4F4;
-}
-
-section p {
-    padding-top: 40px;
-}
-
-h4 {
-    font-size: 1.2em;
-    background: red;
-    color: #fff;
-    display: inline;
-    padding: 3px 13px;
-}
+/* MY TOUGHTS  */
 
 .my-thoughts p {
     text-align: start;
 }
 
+
+/* SKILLS */
+
 .skill-lists {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
@@ -153,6 +162,31 @@ h4 {
 #list-category {
     font-weight: bold;
     color: red;
+}
+
+
+/* FOR MORE INFO */
+
+.for-more .circles {
+    margin-top: 40px;
+    border: 3px solid red;
+    width: 60px;
+    height: 60px;
+}
+
+.for-more .icon {
+    height: 30px;
+    widows: 30px;
+}
+
+.icons-bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.for-more p {
+    font-size: 0.8em;
+    padding-top: 0px;
 }
 
 
@@ -174,4 +208,13 @@ footer {
 
 /* DESKTOP */
 
-@media (min-width: 900px) {}
+@media (min-width: 900px) {
+    section {
+        padding: 50px 230px;
+    }
+    .skill-lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
