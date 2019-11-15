@@ -186,8 +186,7 @@ h4 {
     padding-top: 20px;
 }
 
-.more-info-div,
-span {
+.more-info-div {
     color: red;
     font-weight: 700;
 }
@@ -208,11 +207,6 @@ span {
 
 
 /* MORE INFO TOGGLE WITH >> */
-
-.more-info-div {
-    display: flex;
-    color: black;
-}
 
 .more-info-box {
     display: none;
@@ -301,6 +295,7 @@ span {
     text-decoration: none;
     text-align: center;
     color: #000;
+    font-weight: 700;
 }
 
 .for-more a:hover {
