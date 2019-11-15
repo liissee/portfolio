@@ -183,9 +183,11 @@ h4 {
 .project-container p {
     font-size: 0.9em;
     text-align: start;
+    padding-top: 20px;
 }
 
-.project-container span {
+.more-info-div,
+span {
     color: red;
     font-weight: 700;
 }
@@ -193,7 +195,81 @@ h4 {
 .project-box {
     display: flex;
     flex-direction: column;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    text-align: start;
+}
+
+.tech-used-box p {
+    background: pink;
+    display: inline;
+    padding: 3px;
+    font-size: 0.6em;
+}
+
+
+/* MORE INFO TOGGLE WITH >> */
+
+.more-info-div {
+    display: flex;
+    color: black;
+}
+
+.more-info-box {
+    display: none;
+    font-size: 0.9em;
+    text-align: start;
+}
+
+.active+.more-info-box {
+    display: block;
+}
+
+
+/* IMAGE BOX FADING ON CLICK */
+
+.image-box {
+    position: relative;
+    width: 100%;
+}
+
+.project-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.image-box:hover .project-image {
+    opacity: 0.3;
+}
+
+.image-box:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #FA382F;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 
 
@@ -335,5 +411,38 @@ footer {
     }
     h4 {
         font-size: 1.8em;
+    }
+    /* FEATURED PROJECTS */
+    .project-container {
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .project-container img {
+        width: 100%;
+        border: solid 2px white;
+    }
+    .project-container p {
+        font-size: 0.9em;
+        text-align: start;
+    }
+    .project-container span,
+    a {
+        color: red;
+        font-weight: 700;
+    }
+    .project-box {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        text-align: start;
+        width: 45%;
+    }
+    .tech-used-box p {
+        background: pink;
+        display: inline;
+        padding: 3px;
+        font-size: 0.6em;
     }
 }
