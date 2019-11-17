@@ -39,13 +39,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.hero-text h2 {
+.hero-text h1 {
     font-weight: 700;
     font-size: 3em;
     letter-spacing: 1.5px;
 }
 
-.hero-text h3 {
+.hero-text h2 {
     font-weight: 700;
     font-size: 1.5em;
 }
@@ -97,17 +97,13 @@ section:nth-child(even) {
     background-color: #F4F4F4;
 }
 
-
-/* section p {
-    padding-top: 40px;
-} */
-
 h4 {
     font-size: 1.2em;
     background: #FA382F;
     color: #fff;
-    display: inline;
+    display: inline-block;
     padding: 3px 13px;
+    margin-bottom: 30px;
 }
 
 
@@ -328,7 +324,7 @@ footer {
     .hero-text h2 {
         font-size: 3.5em;
     }
-    .hero-text h3 {
+    .hero-text h2 {
         font-size: 1.6em;
     }
     #profile-picture {
@@ -372,7 +368,7 @@ footer {
     .hero-text h2 {
         font-size: 4.3em;
     }
-    .hero-text h3 {
+    .hero-text h2 {
         font-size: 1.8em;
     }
     #profile-picture {
