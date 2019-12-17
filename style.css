@@ -8,7 +8,7 @@
 /* HEADER  */
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("BBb.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/vass.jpg");
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
@@ -138,9 +138,83 @@ h4 {
 
 /* MY TOUGHTS  */
 
-.my-thoughts p {
-    text-align: start;
+.thoughts-flex {
+  margin-top: 10px;
 }
+.my-thoughts a{
+  color: black;
+  text-decoration: none;
+}
+
+.thought-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.thought-card p {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.thought-card-img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+.thought-headline {
+  color: #000;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.thought-card-text {
+  margin: 15px 0;
+  color: #000;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 5px 0 15px 0;
+}
+
+
+/* .my-thoughts {
+  text-align: center;
+}
+
+.thoughts-flex {
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+}
+
+.my-thoughts a{
+  color: black;
+  text-decoration: none;
+}
+.date {
+  font-weight: 700;
+}
+.thought-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.thought-card-img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 10px;
+} */
 
 
 /* SKILLS */
@@ -181,6 +255,11 @@ h4 {
     text-align: start;
     padding-top: 20px;
 }
+.project-container span,
+.project-container a {
+    color: red;
+    font-weight: 700;
+}
 
 .more-info-div {
     color: red;
@@ -198,8 +277,38 @@ h4 {
     background: pink;
     display: inline;
     padding: 3px;
-    font-size: 0.6em;
+    font-size: 12px;
+    color:black;
 }
+/* OTHER PROJECTS */
+.other-project-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.other-project-card:hover {
+  cursor: pointer;
+}
+.project-card-text {
+  margin: 15px 0;
+  color: #000;
+  font-size: 17px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.text-h {
+  color: red;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
 
 
 /* MORE INFO TOGGLE WITH >> */
@@ -219,7 +328,8 @@ h4 {
 
 .image-box {
     position: relative;
-    width: 100%;
+    width: 350px;
+    background: rgba(0, 0, 0, 0.699);
 }
 
 .project-image {
@@ -233,7 +343,7 @@ h4 {
 
 .middle {
     transition: .5s ease;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -242,15 +352,19 @@ h4 {
     text-align: center;
 }
 
-.middle a {
+.middle a{
     text-decoration: none;
     color: #fff;
 }
 
-.image-box:hover .project-image {
-    opacity: 0.3;
+
+.image-box .project-image {
+    opacity: 0.6;
 }
 
+.image-box:hover .project-image {
+  opacity: 0.8;
+}
 .image-box:hover .middle {
     opacity: 1;
 }
@@ -259,7 +373,7 @@ h4 {
     background-color: #FA382F;
     color: white;
     font-size: 16px;
-    padding: 16px 32px;
+    padding: 10px 20px;
 }
 
 
@@ -297,7 +411,6 @@ h4 {
 .for-more a:hover {
     color: #FA382F;
 }
-
 
 /* FOOTER */
 
@@ -349,6 +462,16 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    /* THOUGHTS */
+    .thoughts-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .thought-card {
+      width: 45%;
     }
 }
 
@@ -419,7 +542,7 @@ footer {
         text-align: start;
     }
     .project-container span,
-    a {
+    .project-container a {
         color: red;
         font-weight: 700;
     }
@@ -434,6 +557,17 @@ footer {
         background: pink;
         display: inline;
         padding: 3px;
-        font-size: 0.6em;
+        font-size: 12px;
+        color:black;
+    }
+
+    /* THOUGHTS */
+    .thoughts-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .thought-card {
+      width: 45%;
     }
 }
