@@ -183,102 +183,68 @@ h4 {
   margin: 5px 0 15px 0;
 }
 
-
-/* .my-thoughts {
-  text-align: center;
-}
-
-.thoughts-flex {
-  display: flex;
-  text-align: start;
-  justify-content: space-between;
-}
-
-.my-thoughts a{
-  color: black;
-  text-decoration: none;
-}
-.date {
-  font-weight: 700;
-}
-.thought-card {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-bottom: 30px;
-}
-.thought-card-img {
-  background-size: cover;
-  background-position: center;
-  border-radius: 3px;
-  width: 100%;
-  height: 180px;
-  margin-bottom: 10px;
-} */
-
-
 /* SKILLS */
 
 .skill-lists {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .skill-lists ul {
-    margin-top: 40px;
-    padding-inline-start: 0px;
-    list-style: none;
-    width: 40%;
-    text-align: start;
+  margin-top: 40px;
+  padding-inline-start: 0px;
+  list-style: none;
+  width: 40%;
+  text-align: start;
 }
 
 .skill-lists li:first-child {
-    font-weight: bold;
-    color: #FA382F;
+  font-weight: bold;
+  color: #FA382F;
 }
 
 
 /* FEATURED PROJECTS */
 
 .project-container {
-    padding: 5px;
+  padding: 5px;
 }
 
 .project-container img {
-    width: 100%;
-    border: solid 2px white;
+  width: 100%;
+  border: solid 2px white;
 }
 
 .project-container p {
-    font-size: 0.9em;
-    text-align: start;
-    padding-top: 20px;
+  font-size: 0.9em;
+  text-align: start;
+  padding-top: 20px;
 }
 .project-container span,
 .project-container a {
-    color: red;
-    font-weight: 700;
+  color: red;
+  font-weight: 700;
 }
 
 .more-info-div {
-    color: red;
-    font-weight: 700;
+  color: red;
+  font-weight: 700;
 }
 
 .project-box {
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    text-align: start;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  text-align: start;
 }
 
 .tech-used-box p {
-    background: pink;
-    display: inline;
-    padding: 3px;
-    font-size: 12px;
-    color:black;
+  background: pink;
+  display: inline;
+  padding: 3px;
+  font-size: 12px;
+  color:black;
 }
 /* OTHER PROJECTS */
 .other-project-card {
@@ -309,8 +275,6 @@ h4 {
 
 }
 
-
-
 /* MORE INFO TOGGLE WITH >> */
 
 .more-info-box {
@@ -328,7 +292,7 @@ h4 {
 
 .image-box {
     position: relative;
-    width: 350px;
+    width: 100%;
     background: rgba(0, 0, 0, 0.699);
 }
 
@@ -356,7 +320,6 @@ h4 {
     text-decoration: none;
     color: #fff;
 }
-
 
 .image-box .project-image {
     opacity: 0.6;
@@ -425,7 +388,7 @@ footer {
 
 /* TABLET */
 
-@media (min-width: 650px) and (max-width: 999px) {
+@media (min-width: 650px) and (max-width: 1199px) {
     /* HEADER/HERO IMAGE SECTION */
     h4 {
         font-size: 1.4em;
@@ -464,6 +427,41 @@ footer {
         justify-content: space-evenly;
     }
 
+/* FEATURED PROJECTS */
+    .project-container {
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .project-container img {
+        width: 100%;
+        border: solid 2px white;
+    }
+    .project-container p {
+        font-size: 0.9em;
+        text-align: start;
+    }
+    .project-container span,
+    .project-container a {
+        color: red;
+        font-weight: 700;
+    }
+    .project-box {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        text-align: start;
+        width: 45%;
+    }
+    .tech-used-box p {
+        background: pink;
+        display: inline;
+        padding: 3px;
+        font-size: 12px;
+        color:black;
+    }
+
     /* THOUGHTS */
     .thoughts-flex {
       display: flex;
@@ -475,10 +473,9 @@ footer {
     }
 }
 
-
 /* DESKTOP */
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     /* HEADER/HERO IMAGE SECTION */
     .hero-text {
         top: 50%;
