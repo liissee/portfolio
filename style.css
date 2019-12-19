@@ -275,18 +275,6 @@ h4 {
 
 }
 
-/* MORE INFO TOGGLE WITH >> */
-
-.more-info-box {
-    display: none;
-    font-size: 0.9em;
-    text-align: start;
-}
-
-.active+.more-info-box {
-    display: block;
-}
-
 
 /* IMAGE BOX FADING ON CLICK */
 
