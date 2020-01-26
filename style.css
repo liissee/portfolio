@@ -195,7 +195,6 @@ h4 {
   margin-top: 40px;
   padding-inline-start: 0px;
   list-style: none;
-  width: 40%;
   text-align: start;
 }
 
@@ -216,13 +215,16 @@ h4 {
   border: solid 2px white;
 }
 
-.project-container p {
-  font-size: 0.9em;
+.project-container p,
+.project-container a {
+  font-size: 1em;
   text-align: start;
   padding-top: 20px;
+  color: black;
+  text-decoration: none;
 }
-.project-container span,
-.project-container a {
+
+.project-container span{
   color: red;
   font-weight: 700;
 }
@@ -259,6 +261,7 @@ h4 {
 .other-project-card:hover {
   cursor: pointer;
 }
+
 .project-card-text {
   margin: 15px 0;
   color: #000;
@@ -272,7 +275,6 @@ h4 {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-
 }
 
 
@@ -304,11 +306,6 @@ h4 {
     text-align: center;
 }
 
-.middle a{
-    text-decoration: none;
-    color: #fff;
-}
-
 .image-box .project-image {
     opacity: 0.6;
 }
@@ -325,6 +322,7 @@ h4 {
     color: white;
     font-size: 16px;
     padding: 10px 20px;
+    font-weight: 600;
 }
 
 
@@ -348,7 +346,7 @@ h4 {
 }
 
 .for-more p {
-    font-size: 0.8em;
+    font-size: 1em;
     padding-top: 0px;
 }
 
@@ -430,8 +428,7 @@ footer {
         font-size: 0.9em;
         text-align: start;
     }
-    .project-container span,
-    .project-container a {
+    .project-container span {
         color: red;
         font-weight: 700;
     }
@@ -526,8 +523,7 @@ footer {
         font-size: 0.9em;
         text-align: start;
     }
-    .project-container span,
-    .project-container a {
+    .project-container span{
         color: red;
         font-weight: 700;
     }
