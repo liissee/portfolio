@@ -450,12 +450,29 @@ footer {
     /* THOUGHTS */
     .thoughts-flex {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
     }
     .thought-card {
       width: 45%;
+      margin: 10px;
     }
+    /* SKILLS */
+
+      .skill-lists {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+
+      .skill-lists ul {
+      margin-top: 40px;
+      padding-inline-start: 0px;
+      list-style: none;
+      text-align: start;
+      }
+
 }
 
 /* DESKTOP */
